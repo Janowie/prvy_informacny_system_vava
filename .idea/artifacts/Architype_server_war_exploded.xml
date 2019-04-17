@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Architype-server:war exploded">
+    <output-path>$PROJECT_DIR$/Server/WebContent</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="prvy_informacny_system_vava/web/Web2" />
+      <element id="javaee-facet-resources" facet="prvy_informacny_system_vava/web/Web" />
+    </root>
+  </artifact>
+</component>
