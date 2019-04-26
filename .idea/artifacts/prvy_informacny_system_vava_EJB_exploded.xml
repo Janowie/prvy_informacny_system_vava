@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="prvy_informacny_system_vava:EJB exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/prvy_informacny_system_vava_EJB_exploded.war</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="prvy_informacny_system_vava/ejb/EJB" />
+      <element id="module-output" name="prvy_informacny_system_vava" />
+    </root>
+  </artifact>
+</component>

@@ -5,7 +5,6 @@ import javax.ws.rs.core.Application;
 import java.util.HashSet;
 import java.util.Set;
 
-
 /**
  * Definicia aplikacie pre REST sluzby vratane registracie tried pre spracovanie REST requestov
  * @author Jaroslav Jakubik
