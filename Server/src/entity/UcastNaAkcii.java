@@ -38,6 +38,14 @@ public class UcastNaAkcii {
     private int poplatok;
 
     public UcastNaAkcii() {
+        this.akcia = null;
+        this.clen = null;
+        this.isic = false;
+        this.kartaNaVlaky = false;
+        this.kartaPoistenca = false;
+        this.prihlaska = false;
+        this.ucast = false;
+        this.poplatok = 0;
     }
 
     public int getId() {
