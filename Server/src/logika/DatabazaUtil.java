@@ -3,12 +3,15 @@ package logika;
 import entity.Akcia;
 import entity.Clen;
 import entity.UcastNaAkcii;
+import org.hibernate.Hibernate;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.query.Query;
 
+import javax.persistence.PersistenceContext;
+import javax.persistence.PersistenceContextType;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -18,11 +21,13 @@ public class DatabazaUtil {
         SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
+        System.out.println(akcia.getDatumAkcie());
         try {
-            session.persist(akcia);
+            session.saveOrUpdate(akcia);
             transaction.commit();
         }catch (Exception e){
             // TODO LOG
+            e.printStackTrace();
             transaction.rollback();
         }finally {
             session.close();
@@ -38,7 +43,10 @@ public class DatabazaUtil {
             ucastNaAkcii.setAkcia(akcia);
             ucastNaAkcii.setClen(clen);
 
+            clen.getUcastiNaAkciach().add(ucastNaAkcii);
+
             session.persist(ucastNaAkcii);
+            session.merge(clen);
             transaction.commit();
         }catch (Exception e){
             // TODO LOG
@@ -94,12 +102,13 @@ public class DatabazaUtil {
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
         try {
-            String hql = "FROM Akcia";
+            String hql = "SELECT a FROM Akcia a";
             Query query = session.createQuery(hql);
             akcie = query.list();
             transaction.commit();
         }catch (Exception e){
             // TODO LOG
+            e.printStackTrace();
             transaction.rollback();
         }finally {
             session.close();
@@ -107,5 +116,47 @@ public class DatabazaUtil {
         return akcie;
     }
 
+    public static List<Akcia> vratIbaAktivneAkcie(){
+        List<Akcia> akcie = new ArrayList<>();
+        SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
+        Session session = sessionFactory.openSession();
+        Transaction transaction = session.beginTransaction();
+        try {
+            String hql = "SELECT a FROM Akcia a WHERE a.datumAkcie >= CURRENT_DATE()";
+            Query query = session.createQuery(hql);
+            akcie = query.list();
+            transaction.commit();
+        }catch (Exception e){
+            // TODO LOG
+            e.printStackTrace();
+            transaction.rollback();
+        }finally {
+            session.close();
+        }
+        return akcie;
+    }
+
+
+    public static Clen vratClenaPodlaId(int id){
+        Clen clen = new Clen();
+        SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
+        Session session = sessionFactory.openSession();
+        Transaction transaction = session.beginTransaction();
+        try {
+            String hql = "SELECT c FROM Clen c WHERE c.id = :id";
+            Query query = session.createQuery(hql);
+            query.setParameter("id", id);
+            clen = (Clen) query.getSingleResult();
+            Hibernate.initialize(clen.getUcastiNaAkciach());
+            transaction.commit();
+        }catch (Exception e){
+            // TODO LOG
+            e.printStackTrace();
+            transaction.rollback();
+        }finally {
+            session.close();
+        }
+        return clen;
+    }
 
 }

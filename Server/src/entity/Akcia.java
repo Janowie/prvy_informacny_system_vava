@@ -24,7 +24,7 @@ public class Akcia {
     @Column(name = "popis")
     private String popis;
 
-    @OneToOne
+    @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "id_zodpovednej_osoby")
     private Clen zodpovednaOsoba;
 

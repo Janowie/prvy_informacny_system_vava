@@ -6,18 +6,12 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="beb52b03-23d0-4486-8d07-0b70099acddf" name="Default" comment="Funkcny hibernate - jediny problem -&gt;  nevedno ako spravne nastavit cestu &#10;ku cfg.xml -&gt; zatial musi byt v source foldri klienta.">
-      <change afterPath="$PROJECT_DIR$/Server/src/entity/Akcia.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/src/entity/UcastNaAkcii.java" afterDir="false" />
+    <list default="true" id="beb52b03-23d0-4486-8d07-0b70099acddf" name="Default" comment="Update datumu na aktualny LocalDate, do akcie pridany datum a miesto konania.">
       <change beforePath="$PROJECT_DIR$/.idea/prvy_informacny_system_vava.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/prvy_informacny_system_vava.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/src/client/CallEjb.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client/src/client/CallEjb.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EA/.project" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EA/.settings/org.eclipse.wst.common.component" beforeDir="false" afterPath="$PROJECT_DIR$/EA/.settings/org.eclipse.wst.common.component" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/etc/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Server/etc/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/src/entity/Clen.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/entity/Clen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/src/entity/blah.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/src/entity/hokuspokusBean.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/src/test/ExecutiveBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/test/ExecutiveBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/entity/Akcia.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/entity/Akcia.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/logika/DatabazaUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/logika/DatabazaUtil.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,11 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Clen.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Clen.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Server/src/entity/Clen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="22" lean-forward="true" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+            <state relative-caret-position="114">
+              <caret line="17" column="82" lean-forward="true" selection-start-line="17" selection-start-column="82" selection-end-line="17" selection-end-column="82" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1994#1995#0" expanded="true" />
@@ -47,11 +41,59 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="DatabazaUtil.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Server/src/logika/DatabazaUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="468">
+              <caret line="80" column="94" selection-start-line="80" selection-start-column="94" selection-end-line="80" selection-end-column="94" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CallEjb.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Client/src/client/CallEjb.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="327">
+              <caret line="106" column="35" selection-start-line="106" selection-start-column="35" selection-end-line="106" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Akcia.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Server/src/entity/Akcia.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="28" column="32" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1256#1257#0" expanded="true" />
+                <element signature="e#1294#1295#0" expanded="true" />
+                <element signature="e#1354#1355#0" expanded="true" />
+                <element signature="e#1408#1409#0" expanded="true" />
+                <element signature="e#1644#1645#0" expanded="true" />
+                <element signature="e#1677#1678#0" expanded="true" />
+                <element signature="e#1732#1733#0" expanded="true" />
+                <element signature="e#1776#1777#0" expanded="true" />
+                <element signature="e#1816#1817#0" expanded="true" />
+                <element signature="e#1852#1853#0" expanded="true" />
+                <element signature="e#1910#1911#0" expanded="true" />
+                <element signature="e#1960#1961#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="UcastNaAkcii.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Server/src/entity/UcastNaAkcii.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="245">
+              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
             </state>
           </provider>
         </entry>
@@ -90,12 +132,14 @@
         <option value="$PROJECT_DIR$/Server/src/entity/pokus.java" />
         <option value="$PROJECT_DIR$/Server/src/entity/hokuspokusBean.java" />
         <option value="$PROJECT_DIR$/Server/src/test/ExecutiveBean.java" />
-        <option value="$PROJECT_DIR$/Server/src/entity/UcastNaAkcii.java" />
-        <option value="$PROJECT_DIR$/Server/src/entity/Akcia.java" />
         <option value="$PROJECT_DIR$/Server/etc/hibernate.cfg.xml" />
         <option value="$PROJECT_DIR$/Client/src/hibernate.cfg.xml" />
-        <option value="$PROJECT_DIR$/Client/src/client/CallEjb.java" />
+        <option value="$PROJECT_DIR$/Server/src/logika/PrihlasovanieNaAkciu.java" />
+        <option value="$PROJECT_DIR$/Server/src/entity/UcastNaAkcii.java" />
+        <option value="$PROJECT_DIR$/Server/src/entity/Akcia.java" />
         <option value="$PROJECT_DIR$/Server/src/entity/Clen.java" />
+        <option value="$PROJECT_DIR$/Server/src/logika/DatabazaUtil.java" />
+        <option value="$PROJECT_DIR$/Client/src/client/CallEjb.java" />
       </list>
     </option>
   </component>
@@ -192,6 +236,13 @@
               <item name="VAVA - Projekt" type="462c0819:PsiDirectoryNode" />
               <item name="Server" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="logika" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="VAVA - Projekt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VAVA - Projekt" type="462c0819:PsiDirectoryNode" />
+              <item name="Server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -207,8 +258,8 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/Server/src" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/byte-buddy-1.9.5.jar!/" />
-    <property name="project.structure.last.edited" value="Libraries" />
-    <property name="project.structure.proportion" value="0.15343915" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15838248" />
     <property name="project.structure.side.proportion" value="0.29770115" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
@@ -369,7 +420,7 @@
       <option name="presentableId" value="Default" />
       <updated>1556029445986</updated>
       <workItem from="1556029447602" duration="3233000" />
-      <workItem from="1556134707390" duration="45668000" />
+      <workItem from="1556134707390" duration="61796000" />
     </task>
     <task id="LOCAL-00001" summary="Pokus o rozbehanie hibernatu, neviem ako to otestovat ci to funguje -&#10;neviem ako spustit nejaku beanu.">
       <created>1556274010263</created>
@@ -378,11 +429,25 @@
       <option name="project" value="LOCAL" />
       <updated>1556274010263</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Zakladne funkcie na pracu s DB:&#10;- pridajAkciuDoDB &#10;- pridajClenaNaAkciu&#10;- vratUcastnikovAkcie&#10;- vratPrihlasenychNaAkciu&#10;- vratVsetkyAkcie">
+      <created>1556382309457</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1556382309457</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Update datumu na aktualny LocalDate, do akcie pridany datum a miesto konania.">
+      <created>1556385444096</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1556385444096</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48901000" />
+    <option name="totallyTimeSpent" value="65029000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -399,7 +464,7 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="DB Execution Console" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.13603239" side_tool="true" visible="true" weight="0.0" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.13927126" side_tool="true" visible="true" weight="0.2460177" />
       <window_info anchor="bottom" id="Application Servers" sideWeight="0.49840087" weight="0.32900432" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
@@ -409,22 +474,22 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4979757" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32900432" />
-      <window_info id="DB Browser" order="2" sideWeight="0.49919742" weight="0.32995737" />
-      <window_info anchor="bottom" id="Messages" sideWeight="0.4978678" weight="0.32900432" />
+      <window_info id="DB Browser" order="2" sideWeight="0.8759542" weight="0.32955465" />
+      <window_info anchor="bottom" id="Messages" sideWeight="0.49716598" weight="0.072566375" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" sideWeight="0.7100213" weight="0.24567099" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49946696" weight="0.32900432" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8639676" visible="true" weight="0.0" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.86072874" visible="true" weight="0.2460177" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49946696" weight="0.32900432" />
-      <window_info id="Persistence" order="2" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8619469" visible="true" weight="0.20161943" />
+      <window_info id="Persistence" order="2" sideWeight="0.471831" side_tool="true" visible="true" weight="0.20161943" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.52816904" visible="true" weight="0.20161943" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49946696" weight="0.38311687" />
-      <window_info id="EJB" sideWeight="0.1380531" side_tool="true" visible="true" weight="0.20161943" />
+      <window_info id="EJB" sideWeight="0.14503817" side_tool="true" weight="0.20161943" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -441,13 +506,24 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="Pokus o rozbehanie hibernatu, neviem ako to otestovat ci to funguje -&#10;neviem ako spustit nejaku beanu." />
     <MESSAGE value="Funkcny hibernate - jediny problem -&gt;  nevedno ako spravne nastavit cestu &#10;ku cfg.xml -&gt; zatial musi byt v source foldri klienta." />
-    <option name="LAST_COMMIT_MESSAGE" value="Funkcny hibernate - jediny problem -&gt;  nevedno ako spravne nastavit cestu &#10;ku cfg.xml -&gt; zatial musi byt v source foldri klienta." />
+    <MESSAGE value="Zakladne funkcie na pracu s DB:&#10;- pridajAkciuDoDB &#10;- pridajClenaNaAkciu&#10;- vratUcastnikovAkcie&#10;- vratPrihlasenychNaAkciu&#10;- vratVsetkyAkcie" />
+    <MESSAGE value="Update datumu na aktualny LocalDate, do akcie pridany datum a miesto konania." />
+    <option name="LAST_COMMIT_MESSAGE" value="Update datumu na aktualny LocalDate, do akcie pridany datum a miesto konania." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Server/src/logika/DatabazaUtil.java</url>
+          <line>25</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="5" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -628,41 +704,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Server/src/entity/Akcia.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="7" lean-forward="true" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#476#477#0" expanded="true" />
-            <element signature="e#504#505#0" expanded="true" />
-            <element signature="e#737#738#0" expanded="true" />
-            <element signature="e#773#774#0" expanded="true" />
-            <element signature="e#843#844#0" expanded="true" />
-            <element signature="e#893#894#0" expanded="true" />
-            <element signature="e#536#537#0" expanded="true" />
-            <element signature="e#564#565#0" expanded="true" />
-            <element signature="e#606#607#0" expanded="true" />
-            <element signature="e#640#641#0" expanded="true" />
-            <element signature="e#672#673#0" expanded="true" />
-            <element signature="e#700#701#0" expanded="true" />
-            <element signature="e#742#743#0" expanded="true" />
-            <element signature="e#776#777#0" expanded="true" />
-            <element signature="e#1256#1257#0" expanded="true" />
-            <element signature="e#1294#1295#0" expanded="true" />
-            <element signature="e#1354#1355#0" expanded="true" />
-            <element signature="e#1408#1409#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Server/etc/hibernate.cfg.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="58" lean-forward="true" selection-start-line="14" selection-start-column="58" selection-end-line="14" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Client/src/hibernate.cfg.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -670,27 +711,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Client/src/client/CallEjb.java">
+    <entry file="file://$USER_HOME$/Documents/Škola/VAVA/02/src/test/t4/StrTest.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/etc/hibernate.cfg.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="119">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/src/logika/PrihlasovanieNaAkciu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Server/src/entity/UcastNaAkcii.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="245">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/src/entity/Akcia.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="28" column="32" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1256#1257#0" expanded="true" />
+            <element signature="e#1294#1295#0" expanded="true" />
+            <element signature="e#1354#1355#0" expanded="true" />
+            <element signature="e#1408#1409#0" expanded="true" />
+            <element signature="e#1644#1645#0" expanded="true" />
+            <element signature="e#1677#1678#0" expanded="true" />
+            <element signature="e#1732#1733#0" expanded="true" />
+            <element signature="e#1776#1777#0" expanded="true" />
+            <element signature="e#1816#1817#0" expanded="true" />
+            <element signature="e#1852#1853#0" expanded="true" />
+            <element signature="e#1910#1911#0" expanded="true" />
+            <element signature="e#1960#1961#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Server/src/entity/Clen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="22" lean-forward="true" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+        <state relative-caret-position="114">
+          <caret line="17" column="82" lean-forward="true" selection-start-line="17" selection-start-column="82" selection-end-line="17" selection-end-column="82" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1994#1995#0" expanded="true" />
@@ -699,6 +769,26 @@
             <element signature="e#2098#2099#0" expanded="true" />
             <element signature="e#2225#2226#0" expanded="true" />
             <element signature="e#2257#2258#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/src/logika/DatabazaUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="80" column="94" selection-start-line="80" selection-start-column="94" selection-end-line="80" selection-end-column="94" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/src/client/CallEjb.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="106" column="35" selection-start-line="106" selection-start-column="35" selection-end-line="106" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -722,7 +812,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>Web</last-edited>
+          <last-edited>Hibernate (prvy_informacny_system_vava)|Hibernate</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
