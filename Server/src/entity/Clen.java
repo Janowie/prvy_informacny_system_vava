@@ -2,6 +2,7 @@ package entity;
 
 import javax.persistence.*;
 import java.sql.Date;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -27,7 +28,7 @@ public class Clen {
     private String priezvisko;
 
     @Column(name = "datum_narodenia")
-    private Date datumNarodenia;
+    private LocalDate datumNarodenia;
 
     @Column(name = "miesto_narodenia")
     private String miestoNarodenia;
@@ -115,11 +116,11 @@ public class Clen {
         this.priezvisko = priezvisko;
     }
 
-    public Date getDatumNarodenia() {
+    public LocalDate getDatumNarodenia() {
         return datumNarodenia;
     }
 
-    public void setDatumNarodenia(Date datumNarodenia) {
+    public void setDatumNarodenia(LocalDate datumNarodenia) {
         this.datumNarodenia = datumNarodenia;
     }
 

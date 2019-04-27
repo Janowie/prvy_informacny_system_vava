@@ -1,7 +1,9 @@
 package entity;
 
 import javax.persistence.*;
+import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 @Entity
@@ -25,6 +27,12 @@ public class Akcia {
     @OneToOne
     @JoinColumn(name = "id_zodpovednej_osoby")
     private Clen zodpovednaOsoba;
+
+    @Column(name = "datum_akcie")
+    private LocalDate datumAkcie;
+
+    @Column(name = "miesto_konania")
+    private String miestoKonania;
 
 
     public Akcia() {
@@ -71,6 +79,22 @@ public class Akcia {
         this.zodpovednaOsoba = zodpovednaOsoba;
     }
 
+    public LocalDate getDatumAkcie() {
+        return datumAkcie;
+    }
+
+    public void setDatumAkcie(LocalDate datumAkcie) {
+        this.datumAkcie = datumAkcie;
+    }
+
+    public String getMiestoKonania() {
+        return miestoKonania;
+    }
+
+    public void setMiestoKonania(String miestoKonania) {
+        this.miestoKonania = miestoKonania;
+    }
+
     @Override
     public String toString() {
         return "Akcia{" +
@@ -79,6 +103,9 @@ public class Akcia {
                 ", nazov='" + nazov + '\'' +
                 ", popis='" + popis + '\'' +
                 ", zodpovednaOsoba=" + zodpovednaOsoba.getMeno() + " " + zodpovednaOsoba.getPriezvisko() +
+                ", datumAkcie=" + datumAkcie +
+                ", miestoKonania='" + miestoKonania + '\'' +
                 '}';
     }
 }
+
