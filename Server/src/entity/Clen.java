@@ -17,6 +17,9 @@ public class Clen {
     @OneToMany(mappedBy = "clen", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<UcastNaAkcii> ucastiNaAkciach;
 
+    @Column(name = "email")
+    private String email;
+
     @Column(name = "meno")
     private String meno;
 
@@ -78,6 +81,14 @@ public class Clen {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public List<UcastNaAkcii> getUcastiNaAkciach() {
