@@ -31,7 +31,7 @@ public class Akcia {
     @Column(name = "datum_akcie")
     private LocalDate datumAkcie;
 
-    @Column(name = "miesto_konania")
+    @Column(name = "miesto_konania")` `
     private String miestoKonania;
 
 
