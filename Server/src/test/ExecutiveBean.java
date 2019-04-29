@@ -8,5 +8,10 @@ import javax.ejb.Stateless;
 @LocalBean
 public class ExecutiveBean {
 
-    public int doPlus(int a, int b) {return a + b;}
+    public int doPlus(int a, int b) {
+
+        System.out.println("VOLOLO");
+
+        return a + b;
+    }
 }
