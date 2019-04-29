@@ -6,11 +6,11 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="beb52b03-23d0-4486-8d07-0b70099acddf" name="Default" comment="Update datumu na aktualny LocalDate, do akcie pridany datum a miesto konania.">
-      <change beforePath="$PROJECT_DIR$/.idea/prvy_informacny_system_vava.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/prvy_informacny_system_vava.iml" afterDir="false" />
+    <list default="true" id="beb52b03-23d0-4486-8d07-0b70099acddf" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/Client/src/logger2.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Server/src/resources/logger.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/src/client/CallEjb.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client/src/client/CallEjb.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/src/entity/Akcia.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/entity/Akcia.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Server/src/logika/DatabazaUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/logika/DatabazaUtil.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -26,8 +26,8 @@
       <file leaf-file-name="Clen.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Server/src/entity/Clen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="17" column="82" lean-forward="true" selection-start-line="17" selection-start-column="82" selection-end-line="17" selection-end-column="82" />
+            <state relative-caret-position="-5">
+              <caret line="10" column="9" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1994#1995#0" expanded="true" />
@@ -41,11 +41,20 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="logger.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Server/src/resources/logger.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="23" lean-forward="true" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="DatabazaUtil.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Server/src/logika/DatabazaUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="80" column="94" selection-start-line="80" selection-start-column="94" selection-end-line="80" selection-end-column="94" />
+            <state relative-caret-position="76">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -56,8 +65,8 @@
       <file leaf-file-name="CallEjb.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Client/src/client/CallEjb.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="106" column="35" selection-start-line="106" selection-start-column="35" selection-end-line="106" selection-end-column="35" />
+            <state relative-caret-position="-292">
+              <caret line="93" column="33" lean-forward="true" selection-start-line="93" selection-start-column="33" selection-end-line="93" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -68,7 +77,7 @@
       <file leaf-file-name="Akcia.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Server/src/entity/Akcia.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
+            <state relative-caret-position="68">
               <caret line="28" column="32" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -93,7 +102,7 @@
         <entry file="file://$PROJECT_DIR$/Server/src/entity/UcastNaAkcii.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="245">
-              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+              <caret line="29" selection-start-line="29" selection-end-line="29" />
             </state>
           </provider>
         </entry>
@@ -111,6 +120,7 @@
     <findStrings>
       <find>se</find>
       <find>ucastiNaAkciach</find>
+      <find>local</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -138,8 +148,9 @@
         <option value="$PROJECT_DIR$/Server/src/entity/UcastNaAkcii.java" />
         <option value="$PROJECT_DIR$/Server/src/entity/Akcia.java" />
         <option value="$PROJECT_DIR$/Server/src/entity/Clen.java" />
-        <option value="$PROJECT_DIR$/Server/src/logika/DatabazaUtil.java" />
         <option value="$PROJECT_DIR$/Client/src/client/CallEjb.java" />
+        <option value="$PROJECT_DIR$/Server/src/resources/logger.properties" />
+        <option value="$PROJECT_DIR$/Server/src/logika/DatabazaUtil.java" />
       </list>
     </option>
   </component>
@@ -164,11 +175,11 @@
       <path value="$PROJECT_DIR$/frontend/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-11" />
-    <option name="y" value="-11" />
-    <option name="width" value="1943" />
-    <option name="height" value="1043" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-9" />
+    <option name="y" value="1" />
+    <option name="width" value="1938" />
+    <option name="height" value="1028" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -192,12 +203,6 @@
               <item name="VAVA - Projekt" type="b2602c69:ProjectViewProjectNode" />
               <item name="VAVA - Projekt" type="462c0819:PsiDirectoryNode" />
               <item name="Client" type="462c0819:PsiDirectoryNode" />
-              <item name="etc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="VAVA - Projekt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="VAVA - Projekt" type="462c0819:PsiDirectoryNode" />
-              <item name="Client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -216,12 +221,6 @@
               <item name="VAVA - Projekt" type="b2602c69:ProjectViewProjectNode" />
               <item name="VAVA - Projekt" type="462c0819:PsiDirectoryNode" />
               <item name="Server" type="462c0819:PsiDirectoryNode" />
-              <item name="etc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="VAVA - Projekt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="VAVA - Projekt" type="462c0819:PsiDirectoryNode" />
-              <item name="Server" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -229,21 +228,7 @@
               <item name="VAVA - Projekt" type="462c0819:PsiDirectoryNode" />
               <item name="Server" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="VAVA - Projekt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="VAVA - Projekt" type="462c0819:PsiDirectoryNode" />
-              <item name="Server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="logika" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="VAVA - Projekt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="VAVA - Projekt" type="462c0819:PsiDirectoryNode" />
-              <item name="Server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -420,7 +405,7 @@
       <option name="presentableId" value="Default" />
       <updated>1556029445986</updated>
       <workItem from="1556029447602" duration="3233000" />
-      <workItem from="1556134707390" duration="61796000" />
+      <workItem from="1556134707390" duration="81005000" />
     </task>
     <task id="LOCAL-00001" summary="Pokus o rozbehanie hibernatu, neviem ako to otestovat ci to funguje -&#10;neviem ako spustit nejaku beanu.">
       <created>1556274010263</created>
@@ -443,11 +428,18 @@
       <option name="project" value="LOCAL" />
       <updated>1556385444096</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Otestovanie vytvorenych metod, spravene potrebne upravy. Metody su plne funkcne.">
+      <created>1556396738570</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1556396738570</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65029000" />
+    <option name="totallyTimeSpent" value="84238000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -459,45 +451,82 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <frame x="-6" y="1" width="1292" height="685" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="DB Execution Console" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.13927126" side_tool="true" visible="true" weight="0.2460177" />
-      <window_info anchor="bottom" id="Application Servers" sideWeight="0.49840087" weight="0.32900432" />
+      <window_info anchor="bottom" id="DB Execution Console" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.2388664" side_tool="true" weight="0.43716815" />
+      <window_info anchor="bottom" id="Application Servers" order="0" sideWeight="0.49840087" weight="0.32900432" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4979757" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32900432" />
+      <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.4979757" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="8" weight="0.32900432" />
       <window_info id="DB Browser" order="2" sideWeight="0.8759542" weight="0.32955465" />
-      <window_info anchor="bottom" id="Messages" sideWeight="0.49716598" weight="0.072566375" />
+      <window_info anchor="bottom" id="Messages" order="1" sideWeight="0.49578413" weight="0.50448835" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
-      <window_info anchor="bottom" id="Java Enterprise" order="7" sideWeight="0.7100213" weight="0.24567099" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" sideWeight="0.7100213" weight="0.24567099" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49946696" weight="0.32900432" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.86072874" visible="true" weight="0.2460177" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49946696" weight="0.32900432" />
-      <window_info id="Persistence" order="2" sideWeight="0.471831" side_tool="true" visible="true" weight="0.20161943" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.52816904" visible="true" weight="0.20161943" />
+      <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.49946696" weight="0.32900432" />
+      <window_info active="true" anchor="bottom" id="Run" order="4" sideWeight="0.7611336" visible="true" weight="0.28108108" />
+      <window_info anchor="bottom" id="Terminal" order="14" sideWeight="0.49878544" weight="0.32743362" />
+      <window_info id="Persistence" order="2" sideWeight="0.1637931" side_tool="true" weight="0.13490725" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8362069" weight="0.13490725" />
       <window_info id="Web" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49946696" weight="0.38311687" />
-      <window_info id="EJB" sideWeight="0.14503817" side_tool="true" weight="0.20161943" />
+      <window_info anchor="bottom" id="Find" order="3" sideWeight="0.49946696" weight="0.38198197" />
+      <window_info id="EJB" sideWeight="0.14503817" side_tool="true" weight="0.20067453" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Persistence" order="3" sideWeight="0.1637931" side_tool="true" weight="0.13490725" />
+      <window_info anchor="bottom" id="DB Execution Console" order="9" />
+      <window_info id="Designer" order="4" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="Application Servers" order="0" sideWeight="0.49840087" weight="0.32900432" />
+      <window_info id="Image Layers" order="5" />
+      <window_info active="true" anchor="bottom" id="Run" order="4" sideWeight="0.7611336" visible="true" weight="0.43716815" />
+      <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="DB Browser" order="6" sideWeight="0.8759542" weight="0.32955465" />
+      <window_info id="UI Designer" order="7" />
+      <window_info id="Favorites" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="14" sideWeight="0.49878544" weight="0.32743362" />
+      <window_info id="Capture Tool" order="9" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.2388664" side_tool="true" visible="true" weight="0.43716815" />
+      <window_info anchor="bottom" id="Messages" order="1" sideWeight="0.49578413" weight="0.50448835" />
+      <window_info anchor="bottom" id="TODO" order="8" weight="0.32900432" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" sideWeight="0.7100213" weight="0.24567099" />
+      <window_info id="EJB" order="0" sideWeight="0.14503817" side_tool="true" weight="0.20067453" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.49946696" weight="0.32900432" />
+      <window_info anchor="right" id="Maven Projects" order="5" />
+      <window_info anchor="bottom" id="Find" order="3" sideWeight="0.49946696" weight="0.38311687" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.8362069" weight="0.13490725" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="bottom" id="Message" order="2" />
+      <window_info id="Web" order="10" side_tool="true" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.4979757" weight="0.4" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -511,18 +540,11 @@
     <MESSAGE value="Funkcny hibernate - jediny problem -&gt;  nevedno ako spravne nastavit cestu &#10;ku cfg.xml -&gt; zatial musi byt v source foldri klienta." />
     <MESSAGE value="Zakladne funkcie na pracu s DB:&#10;- pridajAkciuDoDB &#10;- pridajClenaNaAkciu&#10;- vratUcastnikovAkcie&#10;- vratPrihlasenychNaAkciu&#10;- vratVsetkyAkcie" />
     <MESSAGE value="Update datumu na aktualny LocalDate, do akcie pridany datum a miesto konania." />
-    <option name="LAST_COMMIT_MESSAGE" value="Update datumu na aktualny LocalDate, do akcie pridany datum a miesto konania." />
+    <MESSAGE value="Otestovanie vytvorenych metod, spravene potrebne upravy. Metody su plne funkcne." />
+    <option name="LAST_COMMIT_MESSAGE" value="Otestovanie vytvorenych metod, spravene potrebne upravy. Metody su plne funkcne." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Server/src/logika/DatabazaUtil.java</url>
-          <line>25</line>
-          <properties />
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="5" />
     </breakpoint-manager>
   </component>
@@ -731,13 +753,13 @@
     <entry file="file://$PROJECT_DIR$/Server/src/entity/UcastNaAkcii.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="245">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Server/src/entity/Akcia.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
+        <state relative-caret-position="68">
           <caret line="28" column="32" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -757,10 +779,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Client/src/logger2.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/Server/src/entity/Clen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="17" column="82" lean-forward="true" selection-start-line="17" selection-start-column="82" selection-end-line="17" selection-end-column="82" />
+        <state relative-caret-position="-5">
+          <caret line="10" column="9" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1994#1995#0" expanded="true" />
@@ -773,10 +798,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Server/src/resources/logger.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="23" lean-forward="true" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Server/src/logika/DatabazaUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="80" column="94" selection-start-line="80" selection-start-column="94" selection-end-line="80" selection-end-column="94" />
+        <state relative-caret-position="76">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -785,8 +817,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Client/src/client/CallEjb.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="106" column="35" selection-start-line="106" selection-start-column="35" selection-end-line="106" selection-end-column="35" />
+        <state relative-caret-position="-292">
+          <caret line="93" column="33" lean-forward="true" selection-start-line="93" selection-start-column="33" selection-end-line="93" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

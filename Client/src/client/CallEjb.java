@@ -1,21 +1,12 @@
 package client;
 
 import entity.Akcia;
-import entity.Clen;
-import entity.UcastNaAkcii;
 import logika.DatabazaUtil;
-import org.hibernate.Session;
-import org.hibernate.SessionFactory;
-import org.hibernate.Transaction;
-import org.hibernate.cfg.Configuration;
-import org.hibernate.query.Query;
-import test.FacadeBeanRemote;
 
-import javax.naming.Context;
-import javax.naming.InitialContext;
-import java.time.LocalDate;
-import java.util.ArrayList;
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.util.List;
+import java.util.logging.*;
 
 /**
  * Jednoduchy priklad volania stateless session beany (z klient na aplikacny server)
@@ -26,7 +17,7 @@ import java.util.List;
 public class CallEjb {
 
 	private static final String JNDI = "ejb:EA/Server//FacadeBean!test.FacadeBeanRemote";
-	
+
 	public static void main(String[] args) throws Exception {
 
 
@@ -80,39 +71,61 @@ public class CallEjb {
 //
 //        System.out.println(clen);
 
-//        List<Akcia> akcie = DatabazaUtil.vratVsetkyAkcie();
-//        for(Akcia akcia:akcie){
-//            System.out.println(akcia.getNazov() + " " + akcia.getDatumAkcie());
+        List<Akcia> akcie = DatabazaUtil.vratVsetkyAkcie();
+        for(Akcia akcia:akcie){
+            System.out.println(akcia.getNazov() + " " + akcia.getDatumAkcie());
+        }
+
+        akcie = DatabazaUtil.vratIbaAktivneAkcie();
+        System.out.println(akcie.size());
+        for(Akcia akcia:akcie){
+            System.out.println(akcia.getNazov() + " " + akcia.getDatumAkcie());
+        }
+//        FileHandler fh = new FileHandler("C:/Users/peter/Documents/Škola/VAVA/VAVA - Projekt/logy/vololo.log");
+//        skusobnyLogger.addHandler(fh);
+//        SimpleFormatter formatter = new SimpleFormatter();
+//        fh.setFormatter(formatter);
+
+        skusobnyLogger.warning("pokus o nejaky log");
+
+//        SessionFactory sf = new Configuration().configure().buildSessionFactory();
+//        Session session = sf.openSession();
+//        Transaction t = session.beginTransaction();
+//        Clen clen = new Clen();
+//        clen.setMeno("kazisvet");
+//        LocalDate date = LocalDate.of(2005, 06, 24);
+//        clen.setDatumNarodenia(date);
+//        clen.setEmail("petik@gmail.com");
+//        session.persist(clen);
+//        t.commit();
+//        session.close();
+
+//        List<Clen> clenovia = DatabazaUtil.vratPrihlasenychNaAkciu(akcia);
+//
+//        System.out.println(clenovia.size());
+//        for(Clen clen:clenovia){
+//            System.out.println(clen);
 //        }
 //
-//        akcie = DatabazaUtil.vratIbaAktivneAkcie();
-//        System.out.println(akcie.size());
-//        for(Akcia akcia:akcie){
-//            System.out.println(akcia.getNazov() + " " + akcia.getDatumAkcie());
+//        clenovia = DatabazaUtil.vratUcastnikovAkcie(akcia);
+//        System.out.println(clenovia.size());
+//        for(Clen clen:clenovia){
+//            System.out.println(clen);
 //        }
 
+    }
+
+    private static final LogManager logManager = LogManager.getLogManager();
+    private static final Logger skusobnyLogger = Logger.getLogger("skusobnyLogger");
 
 
-        SessionFactory sf = new Configuration().configure().buildSessionFactory();
-        Session session = sf.openSession();
-        Transaction t = session.beginTransaction();
-        Akcia akcia = session.get(Akcia.class, 2);
-        t.commit();
-        session.close();
+    static{
 
-        List<Clen> clenovia = DatabazaUtil.vratPrihlasenychNaAkciu(akcia);
-
-        System.out.println(clenovia.size());
-        for(Clen clen:clenovia){
-            System.out.println(clen);
+        try {
+            logManager.readConfiguration(new FileInputStream("Server/src/resources/logger.properties"));
+        } catch (IOException exception) {
+            skusobnyLogger.log(Level.SEVERE, "Error in loading configuration",exception);
         }
-
-        clenovia = DatabazaUtil.vratUcastnikovAkcie(akcia);
-        System.out.println(clenovia.size());
-        for(Clen clen:clenovia){
-            System.out.println(clen);
-        }
-
     }
 
 }
