@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="PIS:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/PIS_war_exploded</output-path>
+    <root id="root">
+      <element id="dir-copy" path="$PROJECT_DIR$/Server/WebContent" />
+    </root>
+  </artifact>
+</component>

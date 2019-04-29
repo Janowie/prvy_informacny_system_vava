@@ -1,0 +1,28 @@
+.box {
+    margin-top: 30px;
+}
+
+.input-group-text {
+    background-color: #f39c12 !important;
+    color: white;
+}
+
+.scanner-top {
+    width: 400px;
+    height: 400px;
+}
+
+.scanner-top img {
+    width: 100%;
+    opacity: 0.5;
+}
+
+.input-group {
+    width: 400px;
+}
+
+.scanner-top button, .input-group button {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}

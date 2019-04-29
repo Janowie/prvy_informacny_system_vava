@@ -1,0 +1,101 @@
+<br>
+<h1 class="text-center"> Email </h1>
+
+<div class="container box">
+  
+  <form action="" [formGroup]="eventForm" (ngSubmit)="onSubmit()">
+
+    <div class="form-group">
+      <label for="name"><b> Príjemcovia: </b></label>
+      <!-- SWITCH 
+        add - checked to activate
+      -->
+      <div class="container">
+        <div style="padding: 0px;  width: 290px;">
+          <ul>
+            <li>
+                <label class="switch">
+                  <input type="checkbox">
+                  <span class="sliderSwitch round"></span>
+                </label>
+            </li>	  
+            <li>
+              <p> Skauti </p>
+            </li>
+          </ul>
+          <ul>
+              <li>
+                  <label class="switch">
+                  <input type="checkbox">
+                  <span class="sliderSwitch round"></span>
+                  </label>
+              </li>  
+            <li>	
+              <p> Skautky </p>
+            </li>	
+          </ul>
+        </div>
+        <div style="padding: 0px;  width: 290px;">
+            <ul>
+                <li>
+                    <label class="switch">
+                      <input type="checkbox">
+                      <span class="sliderSwitch round"></span>
+                    </label>
+                </li>	
+                <li>
+                  <p> Vĺčatá </p>
+                </li>
+              </ul>
+              <ul>
+                  <li>
+                    <label class="switch">
+                    <input type="checkbox">
+                    <span class="sliderSwitch round"></span>
+                    </label>
+                  </li>  
+                <li>	
+                  <p> Včielky </p>
+                </li>	
+              </ul>
+        </div>
+      </div>
+      <!-- /SWITCH -->
+      <br><br><br>
+    </div>
+    
+
+    <div class="form-group">
+      <label for="organisator"><b> Predmet </b></label> 
+      <input type="text" formControlName = "organisator" class="form-control" [ngClass]="{ 'is-invalid': submitted && eventForm.controls.name.errors }">
+      <div *ngIf="submitted && eventForm.controls.organisator.errors" class="error">
+        <div *ngIf="eventForm.controls.organisator.errors.required"> Pole organizátor je povinné. </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="goal"><b> Správa </b></label>
+      <textarea rows="4" cols="50" formControlName = "body" class="form-control" [ngClass]="{ 'is-invalid': submitted && eventForm.controls.name.errors }">
+      </textarea>
+      <div *ngIf="submitted && eventForm.controls.goal.errors" class="error">
+        <div *ngIf="eventForm.controls.goal.errors.required"> Pole cieľ akcie je povinné. </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-3">
+        <label class="switch">
+            <input type="checkbox">
+            <span class="sliderSwitch round"></span>
+        </label>
+      </div>
+      <div class="col-lg-9">
+          <p> Do emailu pridať QR kód na dochádzku </p>
+      </div>  
+    </div>
+        
+
+    <input type="submit" value="Poslať" class="btn btn-primary">
+
+  </form>
+</div>

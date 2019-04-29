@@ -1,0 +1,29 @@
+<div class="container webcam">
+  <webcam [height]="400" [width]="400" [trigger]="triggerObservable" (imageCapture)="handleImage($event)" *ngIf="showWebcam"
+          [allowCameraSwitch]="allowCameraSwitch" [switchCamera]="nextWebcamObservable"
+          [videoOptions]="videoOptions"
+          [imageQuality]="1"
+          (cameraSwitched)="cameraWasSwitched($event)"
+          (initError)="handleInitError($event)"
+  ></webcam>
+  <button (click)="triggerSnapshot();" type="button" class="btn btn-lg btn-primary"> Naskenuj QR kód </button>
+</div>
+
+<div class="row" *ngIf="webcamImage">
+  <table>
+    <tr>
+      <td>Name --> {{ event.name }} </td>
+      <td><img src="../../assets/done.png" alt="logo-done" class="done" /></td>
+    </tr>
+  </table>
+</div>
+
+<!-- <div class="snapshot" *ngIf="webcamImage">
+  <h2>Nice one!</h2>
+  <img [src]="webcamImage.imageAsDataUrl"/>
+</div> -->
+
+<h4 *ngIf="errors.length > 0">Messages:</h4>
+<ul *ngFor="let error of errors">
+  <li>{{error | json}}</li>
+</ul>

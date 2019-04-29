@@ -1,0 +1,23 @@
+
+<div class="container box">
+  <h3 class="text-center"> Zaznač dochádzku na akcií: </h3>
+  <h1 class="text-center"> {{ event.name }} </h1>
+
+  <p>Zatiaľ prišlo: 30 členov.</p>
+
+  <hr><br><br> 
+
+  <div *ngIf="scann === false" class="container scanner-top">
+    <img src="../../assets/qr-example.png" alt="qr-example" />
+    <button (click)="openCamera()" type="button" class="btn btn-lg btn-primary"> Naskenuj QR kód </button>
+  </div>
+  <app-scanner *ngIf="scann"></app-scanner>
+
+  <p class="text-center"><br><br> alebo <br><br></p>
+
+  <div class="container input-group input-group-lg">
+    <input type="text" class="form-control" aria-label="Large" placeholder="Meno účastníka"><br><br>
+    <button  type="button" class="btn btn-lg btn-primary"> Vyhľadaj účastníka </button>
+  </div>
+
+</div>

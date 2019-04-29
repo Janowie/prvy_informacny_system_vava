@@ -1,0 +1,21 @@
+<div class="container">
+  <br><br>
+  <h1 class="text-center"> Kalendár akcií </h1>
+  <br>
+
+  <!-- <div class="container box next-event"> -->
+  <div *ngFor="let e of events; let i = index"  class="container box">
+      <table>
+        <tr>
+          <td (click)="showDetail(i)"><h5> {{ e.date | date: 'dd.MM.yyyy' }} </h5></td>
+          <td (click)="showDetail(i)"><p> {{ e.name }} </p></td>
+          <td>
+            <img *ngIf="i < 2" (click)="markAttendance(i)" src="../../assets/attendance-logo-online.png" alt="attendance-logo" class="img-responsive attendance-logo" />
+            <img *ngIf="i >= 2" (click)="showDetail(i)" src="../../assets/attendance-logo.png" alt="attendance-logo" class="img-responsive attendance-logo" />
+          </td>
+        </tr>
+      </table>
+  </div>
+
+</div>
+ 
